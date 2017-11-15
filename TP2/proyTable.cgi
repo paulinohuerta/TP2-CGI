@@ -1,0 +1,78 @@
+#!/usr/bin/perl
+
+use CGI;
+
+$cgiobject = new CGI;
+
+print $cgiobject->header,
+
+$cgiobject->start_html (
+
+        -title=>'Crear tabla usando Perl'
+),
+        $cgiobject->start_table ({-border=>'1', -align=>'center'}), "\n",
+
+        $cgiobject->start_Tr,
+                $cgiobject->start_td,
+                "First Name",
+                $cgiobject->end_td,
+                $cgiobject->start_td,
+                "Last Name",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Color",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Age",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Car",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Team",
+                $cgiobject->end_td,
+        $cgiobject->end_Tr,
+        $cgiobject->start_Tr,
+                $cgiobject->start_td,
+                "John",
+                $cgiobject->end_td,
+                $cgiobject->start_td,
+                "Paul",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Red",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "25",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Skoda",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Arsenal",
+                $cgiobject->end_td,
+        $cgiobject->end_Tr,
+        $cgiobject->start_Tr,
+                $cgiobject->start_td,
+                "Todd",
+                $cgiobject->end_td,
+                $cgiobject->start_td,
+                "Haul",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Blue",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "20",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "BMW",
+                $cgiobject->end_td,
+		$cgiobject->start_td,
+                "Manchester United",
+                $cgiobject->end_td,
+        $cgiobject->end_Tr,
+        $cgiobject->end_table, "\n",
+
+$cgiobject->end_html;
+exit; #The script will exit now
